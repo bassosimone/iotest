@@ -6,21 +6,9 @@
 
 package iotest
 
-import (
-	"io"
+import "io"
 
-	"github.com/bassosimone/runtimex"
-)
-
-// FuncWriter allows to mock any [io.FuncWriter].
-type FuncWriter struct {
-	WriteFunc func(b []byte) (int, error)
-}
+// FuncWriter allows to mock any [io.Writer].
+type FuncWriter = FuncWriteCloser
 
 var _ io.Writer = &FuncWriter{}
-
-// Write implements [io.Writer].
-func (w *FuncWriter) Write(b []byte) (int, error) {
-	runtimex.Assert(w.WriteFunc != nil)
-	return w.WriteFunc(b)
-}
