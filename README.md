@@ -2,7 +2,7 @@
 
 [![GoDoc](https://pkg.go.dev/badge/github.com/bassosimone/iotest)](https://pkg.go.dev/github.com/bassosimone/iotest) [![Build Status](https://github.com/bassosimone/iotest/actions/workflows/go.yml/badge.svg)](https://github.com/bassosimone/iotest/actions) [![codecov](https://codecov.io/gh/bassosimone/iotest/branch/main/graph/badge.svg)](https://codecov.io/gh/bassosimone/iotest)
 
-The `iotest` Go package contains code to test `io` types (e.g., `io.Writer`).
+The `iotest` Go package contains code to test `io` types (e.g., `io.Writer`, `io.Reader`).
 
 For example:
 
